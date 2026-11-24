@@ -1,0 +1,9 @@
+{
+  "version": "1.0.7",
+  "files": [
+    "LDB-Cai-Dat-Cham-Cong-1.0.7.exe",
+    "ldb-update.json"
+  ],
+  "installerSha256": "301fccc21a58adbcc5c3ec240c196448833e91e0da70e1bb6febfb4d29b42938",
+  "feedSha256": "be2d83e295b5c30bda053cb12478c09889df0679e6f8a679771fa72db8534257"
+}
