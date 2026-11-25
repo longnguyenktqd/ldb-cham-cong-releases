@@ -8,9 +8,17 @@ Phần mềm chấm công tại máy cửa hàng, có ảnh đối chiếu, bả
 
 - **[TẢI BỘ CÀI WINDOWS MỚI NHẤT](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest)**
 - **[XEM HƯỚNG DẪN SỬ DỤNG PDF - 10 TRANG](docs/LDB-Huong-Dan-Su-Dung.pdf)**
-- **[TẢI FILE PDF VỀ MÁY](https://github.com/longnguyenktqd/ldb-cham-cong-releases/raw/refs/heads/main/docs/LDB-Huong-Dan-Su-Dung.pdf)**
+- **[TẢI FILE PDF VỀ MÁY](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Su-Dung.pdf)**
 
 Khách chỉ cần bộ cài `.exe`. Tài liệu PDF có thể mở trên máy tính hoặc điện thoại để xem từng bước.
+
+## Cập nhật từ 1.0.7 lên 1.0.8
+
+**[Xem hướng dẫn cập nhật giữ dữ liệu và mã kích hoạt](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Cap-Nhat-1.0.8.txt).**
+
+Tạo và tải thêm bản sao lưu, dùng đúng tài khoản Windows cũ, thoát LDB ở khay hệ thống rồi chạy bộ cài 1.0.8 bằng quyền quản trị Windows. Bộ cài chuyển dữ liệu sang dịch vụ bảo vệ riêng và giữ mã kích hoạt cùng thời hạn gói cũ. Mở biểu tượng Desktop để kiểm tra lại nhân viên, công và lương.
+
+Khách dùng bản có kiểm tra cập nhật có thể bấm **Kiểm tra bản mới** trong phần mềm. Khi bật kiểm tra tự động, thông báo xuất hiện ở lần kiểm tra tiếp theo; quản lý vẫn cần tải và chạy bộ cài. Máy đã dùng 1.0.8 sẽ tự tạm dừng dịch vụ khi cài cập nhật sau này.
 
 ## 1. Chuẩn bị trước khi cài
 
@@ -25,7 +33,7 @@ Khách chỉ cần bộ cài `.exe`. Tài liệu PDF có thể mở trên máy t
 
 1. Bấm **TẢI BỘ CÀI WINDOWS MỚI NHẤT** ở đầu trang.
 2. Tại trang phát hành, tìm phần **Assets**; bấm để mở danh sách nếu đang thu gọn.
-3. Bấm file có tên dạng **`LDB-Cai-Dat-Cham-Cong-X.Y.Z.exe`**. `X.Y.Z` là số phiên bản, ví dụ `1.0.7`.
+3. Bấm file có tên dạng **`LDB-Cai-Dat-Cham-Cong-X.Y.Z.exe`**. `X.Y.Z` là số phiên bản, ví dụ `1.0.8`.
 4. Chờ trình duyệt tải xong, rồi mở thư mục **Downloads / Tải xuống**.
 
 Để cài phần mềm, chọn đúng file **`.exe`**. Các mục **Source code (zip)**, **Source code (tar.gz)** và **`ldb-update.json`** phục vụ mục đích khác; khách không cần mở chúng để cài.

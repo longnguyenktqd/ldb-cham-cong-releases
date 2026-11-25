@@ -1,0 +1,15 @@
+{
+  "version": "1.0.8",
+  "files": [
+    "LDB-Cai-Dat-Cham-Cong-1.0.8.exe",
+    "ldb-update.json",
+    "LDB-Huong-Dan-Su-Dung.pdf",
+    "LDB-Huong-Dan-Cap-Nhat-1.0.8.txt"
+  ],
+  "sha256": {
+    "LDB-Cai-Dat-Cham-Cong-1.0.8.exe": "dd1da1f729c0fdb5222298a5f7e3d950441ed5585814942780d33f5a335fb253",
+    "ldb-update.json": "d85afffb839e7a48b3dde09d9918586cbc6bb1f9c9df5953d5791184d03bbdbd",
+    "LDB-Huong-Dan-Su-Dung.pdf": "024a794915db226238d2197381b32fd5956394402d3086ea9d0e2050ee20fad4",
+    "LDB-Huong-Dan-Cap-Nhat-1.0.8.txt": "e94dfa7d07192ab7330b632928695bf9fbf0a1567c0debb08756ed59a390357b"
+  }
+}

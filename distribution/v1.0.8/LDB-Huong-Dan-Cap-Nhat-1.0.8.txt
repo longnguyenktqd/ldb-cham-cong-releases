@@ -1,0 +1,41 @@
+CHẤM CÔNG CỬA HÀNG LDB — CẬP NHẬT 1.0.8
+Hotline / Zalo: 0355636456
+
+DÀNH CHO KHÁCH ĐANG DÙNG BẢN 1.0.7
+1. Đăng nhập đúng tài khoản Windows đã dùng phần mềm chấm công.
+2. Hoàn tất các lượt chấm đang thao tác. Nên tải thêm một bản sao lưu và cất ở USB/ổ khác.
+3. Thoát bản cũ từ biểu tượng LDB ở khay gần đồng hồ Windows.
+4. Mở LDB-Cai-Dat-Cham-Cong-1.0.8.exe. Chủ cửa hàng cho phép quyền quản trị Windows hoặc nhập thông tin tài khoản quản trị khi Windows yêu cầu.
+5. Bấm Cài đặt / Cập nhật, chờ thông báo hoàn tất. Không tắt máy khi đang chuyển dữ liệu.
+6. Mở biểu tượng Chấm công cửa hàng LDB ngoài Desktop. Kiểm tra tên nhân viên, công và lương của tháng gần nhất.
+
+Nhân viên, PIN, mật khẩu quản lý, giờ công, ảnh, lương và mã kích hoạt được chuyển giữ nguyên. Không cần mua hoặc cấp lại mã chỉ vì cập nhật lên 1.0.8 trên cùng máy/Windows. Thời hạn gói cũ không đổi.
+
+Nếu bộ cài báo dữ liệu không hợp lệ, không đủ dung lượng, sai tài khoản Windows hoặc chưa thấy dữ liệu cũ: dừng thao tác và liên hệ LDB. Không xóa thư mục dữ liệu để cài lại từ đầu. Không nhập lại toàn bộ nhân viên vào một bảng công trống.
+
+KHÁCH MỚI
+Chạy cùng bộ cài, cho phép quyền quản trị Windows, bấm Cài đặt. Mở biểu tượng LDB trên Desktop, sao chép mã máy gửi LDB để nhận mã kích hoạt; sau đó tạo mật khẩu quản lý và nhân viên.
+
+SAU KHI CẬP NHẬT
+- Nhân viên mở biểu tượng Desktop và chấm Vào ca / Tan ca như cũ. Camera lỗi vẫn ghi công và ghi lý do thiếu ảnh.
+- Dịch vụ dữ liệu tự chạy cùng Windows. Đóng trình duyệt không tắt dịch vụ. Muốn tự mở màn hình chấm công khi đăng nhập Windows: bật lựa chọn trong Sao lưu & Thiết lập.
+- Nhân viên dùng tài khoản Windows Standard. Chủ cửa hàng giữ riêng tài khoản quản trị Windows và mật khẩu quản lý LDB. Nếu dùng chung tài khoản có quyền quản trị Windows, người sử dụng vẫn có thể can thiệp hệ thống.
+- Ảnh cũ được giữ toàn bộ theo mặc định. Quản lý có thể chọn giữ 90/180/365/730 ngày, xác nhận bằng mật khẩu. Việc dọn ảnh giữ nguyên giờ công và số liệu lương.
+- Sao lưu được giữ theo lịch ngày/tuần/tháng và giới hạn dung lượng; luôn ưu tiên giữ hai bản mới nhất. Nếu hai bản này đã vượt giới hạn, cần ổ lớn hơn hoặc chọn chính sách ảnh phù hợp. Bản gốc trước chuyển bảo vệ và bản sao mã kích hoạt được giữ riêng.
+- Khi chốt lương vẫn kiểm tra công, lương cố định, thưởng, điều chỉnh và tạm ứng trước khi chốt tháng/xuất Excel.
+
+GOOGLE DRIVE VÀ SAO LƯU NGOÀI MÁY
+- Nếu thư mục báo cáo cũ đã có trước khi chuyển, phần mềm giữ đường dẫn đó. Mở Google Drive để kiểm tra đồng bộ thực tế; thời điểm xuất Excel không chứng minh đã tải lên mạng.
+- Máy mới dùng thư mục báo cáo tại C:\ProgramData\LDB-ChamCong\reports, trừ khi Windows đặt ProgramData ở ổ khác.
+- Chỉ đồng bộ thư mục báo cáo. Không chia sẻ vùng dữ liệu private hoặc file sao lưu đầy đủ cho nhân viên.
+- Sao lưu ngoài máy dùng thư mục con LDB riêng trong nơi đã chọn; các file cũ ngoài thư mục con được giữ nguyên. USB/ổ ngoài phải cho dịch vụ quyền ghi. Nếu Windows từ chối, chủ cửa hàng cấp quyền cho NT SERVICE\LDBChamCong hoặc liên hệ LDB để thiết lập; không tắt phần mềm bảo vệ Windows.
+- Ổ mạng gắn theo tài khoản cá nhân có thể không dùng được từ dịch vụ. Nên thử sao lưu và thử phục hồi sau khi thiết lập.
+- Nếu chuyển sang tài khoản Windows khác cho nhân viên, kiểm tra lại ứng dụng Google Drive có chạy ở tài khoản đó và đang đồng bộ đúng thư mục. Nên dùng tài khoản Google riêng cho cửa hàng.
+
+KHÔI PHỤC / SỬA CHỮA
+- Sửa chương trình thiếu/hỏng file: chạy lại bộ cài. Không xóa vùng dữ liệu bảo vệ.
+- Khôi phục công: mở KHOI-PHUC-DU-LIEU.cmd trong C:\Program Files\LDB-ChamCong, chủ cửa hàng xác nhận quyền quản trị Windows và chọn file .sqlite. Dữ liệu hiện tại được sao lưu trước thay; mã kích hoạt không thay theo bản sao bảng công.
+- Bản sao cũ không chứa các lượt công phát sinh sau thời điểm sao lưu. Liên hệ LDB trước khi phục hồi nếu chưa chắc.
+
+LƯU Ý PHÁT HÀNH
+Bộ cài 1.0.8 đã được kiểm tra và quét Defender ngày 25/11/2026. Chưa có chứng thư ký Windows của nhà phát hành; việc kiểm tra chữ ký nội bộ của LDB không thay thế chứng thư đó. Không cam kết mọi phần mềm diệt virus đều không cảnh báo.
