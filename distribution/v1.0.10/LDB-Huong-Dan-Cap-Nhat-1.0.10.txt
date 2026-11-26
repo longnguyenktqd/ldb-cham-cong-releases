@@ -1,0 +1,37 @@
+﻿CHẤM CÔNG CỬA HÀNG LDB 1.0.10 - CÀI ĐẶT / CẬP NHẬT
+
+KHÁCH MỚI
+Tải LDB-Cai-Dat-Cham-Cong-1.0.10.exe từ GitHub chính thức, mở file và cho phép quyền quản trị Windows để cài. Mở biểu tượng LDB trên Desktop.
+Chọn Dùng thử miễn phí 7 ngày, nhập tên, số điện thoại/Zalo và tên cửa hàng. Đọc thông báo dữ liệu và xác nhận đăng ký. Nhận tiếp thị là ô tùy chọn, không bắt buộc.
+Cần Internet khi đăng ký; sau khi cấp thử, chấm công tại máy trong thời hạn có thể không cần Internet. Đồng bộ Drive vẫn cần Internet. Mỗi mã máy một lần; thử lại không được cộng thêm 7 ngày.
+Tạo mật khẩu quản lý, thêm nhân viên và cấp mã/PIN riêng. Khóa quản lý để về màn hình nhân viên.
+
+GIỚI HẠN BẢN THỬ TỪ 1.0.10
+Bản thử vẫn chấm công, xem và xuất bảng công cơ bản. Tự xuất báo cáo để đồng bộ Drive, chốt/mở lại lương tháng và xuất/in phiếu lương cá nhân cần gói trả phí. Mỗi lần bấm tính năng bị giới hạn sẽ hiện popup nâng cấp có giá, nút kích hoạt, Zalo và nút Để sau. Khóa tính năng cả phía xử lý, không chỉ giao diện. Giới hạn áp dụng cho mã thử; mã trả phí cũ được giữ đầy đủ quyền.
+
+GIÁ CHO ĐƠN HÀNG MỚI
+300.000đ/1 năm hoặc 500.000đ/trọn đời phiên bản đã mua, cho một mã máy. Gói trọn đời hỗ trợ 12 tháng; nâng cấp lớn tính riêng.
+Thanh toán và cấp mã trả phí do LDB đối soát; chưa tự xác nhận chuyển khoản. Dán mã trả phí vào Kích hoạt/Gia hạn để tiếp tục trên dữ liệu cũ.
+
+KHÁCH ĐANG DÙNG
+1. Tạo và tải thêm bản sao lưu ra nơi riêng.
+2. Trong Sao lưu & Thiết lập > Phiên bản & Cập nhật, kiểm tra và tải bản mới; hoặc tải bộ cài từ GitHub.
+3. Chạy bộ cài trên cùng máy/Windows. Bản 1.0.8 tự dừng dịch vụ khi cài cập nhật. Nếu dùng 1.0.7 trở xuống, thoát bản cũ từ khay gần đồng hồ trước khi cài.
+4. Chủ cửa hàng xác nhận quyền quản trị Windows, chờ hoàn tất, mở biểu tượng LDB trên Desktop và kiểm tra bảng công/lương.
+Giữ nguyên dữ liệu, mã máy, mã kích hoạt và thời hạn đã cấp. Không chuyển khách trả phí cũ sang dùng thử hoặc bắt mua lại do cập nhật.
+Nếu thấy dữ liệu trống ngoài dự kiến, giữ nguyên thư mục và liên hệ LDB trước khi tạo lại nhân viên hoặc khôi phục bản cũ.
+
+KHI HẾT HẠN
+Hết dùng thử hoặc hết gói có hạn: dừng ghi công mới và chỉnh sửa. Quản lý vẫn đăng nhập xem công/ảnh, xuất Excel/CSV/phiếu lương và tải bản sao lưu. Dữ liệu không bị xóa. Kích hoạt gói còn hiệu lực để tiếp tục ghi nhận.
+
+DỮ LIỆU VÀ TIẾP THỊ
+Đăng ký gửi thông tin liên hệ tự khai, tên cửa hàng, mã máy, phiên bản, thời điểm thử và lựa chọn tiếp thị vào bảng riêng của LDB. Thông tin chưa được xác minh OTP. Không gửi nhân viên, PIN, mật khẩu, ảnh, công hoặc lương lên danh sách dùng thử.
+Chỉ tiếp thị khi khách đồng ý. Liên hệ 0355636456 để sửa/xóa liên hệ hoặc rút đồng ý tiếp thị. Thông tin liên hệ được ẩn sau tối đa 12 tháng theo lịch xử lý; dấu nhận diện máy tối thiểu được giữ để ngăn cấp thử lặp.
+
+PDF MỚI
+LDB-Huong-Dan-Su-Dung.pdf có 14 trang. Trang 10-12: cài và đồng bộ Google Drive, chia sẻ cho kế toán, xử lý lỗi. Trang 14: đăng ký thử, hết hạn và mua gói.
+Báo cáo online chỉ mới khi máy cửa hàng xuất được file và Google Drive đã tải xong. Giữ file .xlsx gốc; kế toán tải bản sao riêng để làm lương.
+
+Chỉ tải từ https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest
+Bộ cài chưa có chứng thư nhà phát hành Windows. Giữ Windows Defender hoạt động; nếu gặp cảnh báo, gửi nội dung cho LDB để kiểm tra.
+Hotline / Zalo: 0355636456
