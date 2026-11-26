@@ -7,18 +7,32 @@ Phần mềm chấm công tại máy cửa hàng, có ảnh đối chiếu, bả
 ## Tải bộ cài và hướng dẫn
 
 - **[TẢI BỘ CÀI WINDOWS MỚI NHẤT](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest)**
-- **[XEM HƯỚNG DẪN SỬ DỤNG PDF - 13 TRANG](docs/LDB-Huong-Dan-Su-Dung.pdf)**
+- **[XEM HƯỚNG DẪN SỬ DỤNG PDF - 14 TRANG](docs/LDB-Huong-Dan-Su-Dung.pdf)**
 - **[TẢI FILE PDF VỀ MÁY](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Su-Dung.pdf)**
 
 Khách chỉ cần bộ cài `.exe`. Tài liệu PDF có thể mở trên máy tính hoặc điện thoại để xem từng bước.
 
-## Cập nhật từ 1.0.7 lên 1.0.8
+## Cập nhật từ bản cũ lên 1.0.9
 
-**[Xem hướng dẫn cập nhật giữ dữ liệu và mã kích hoạt](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Cap-Nhat-1.0.8.txt).**
+**[Xem hướng dẫn cập nhật giữ dữ liệu và mã kích hoạt](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Cap-Nhat-1.0.9.txt).**
 
-Tạo và tải thêm bản sao lưu, dùng đúng tài khoản Windows cũ, thoát LDB ở khay hệ thống rồi chạy bộ cài 1.0.8 bằng quyền quản trị Windows. Bộ cài chuyển dữ liệu sang dịch vụ bảo vệ riêng và giữ mã kích hoạt cùng thời hạn gói cũ. Mở biểu tượng Desktop để kiểm tra lại nhân viên, công và lương.
+Tạo và tải thêm bản sao lưu, dùng đúng tài khoản Windows cũ, thoát LDB ở khay hệ thống rồi chạy bộ cài 1.0.9 bằng quyền quản trị Windows. Bộ cài chuyển dữ liệu sang dịch vụ bảo vệ riêng và giữ mã kích hoạt cùng thời hạn gói cũ. Mở biểu tượng Desktop để kiểm tra lại nhân viên, công và lương.
 
-Khách dùng bản có kiểm tra cập nhật có thể bấm **Kiểm tra bản mới** trong phần mềm. Khi bật kiểm tra tự động, thông báo xuất hiện ở lần kiểm tra tiếp theo; quản lý vẫn cần tải và chạy bộ cài. Máy đã dùng 1.0.8 sẽ tự tạm dừng dịch vụ khi cài cập nhật sau này.
+Khách dùng bản có kiểm tra cập nhật có thể bấm **Kiểm tra bản mới** trong phần mềm. Khi bật kiểm tra tự động, thông báo xuất hiện ở lần kiểm tra tiếp theo; quản lý vẫn cần tải và chạy bộ cài. Máy đã dùng 1.0.8 trở lên sẽ tự tạm dừng dịch vụ khi cài cập nhật sau này.
+
+## Dùng thử và giá cho khách mới
+
+| Gói | Giá | Phạm vi |
+|---|---:|---|
+| Dùng thử | Miễn phí 7 ngày | Tự đăng ký trong phần mềm, mỗi mã máy một lần |
+| 1 năm | 300.000đ | Bản quyền một máy trong thời hạn đã cấp |
+| Trọn đời phiên bản đã mua | 500.000đ | Một mã máy; hỗ trợ 12 tháng, nâng cấp lớn tính riêng |
+
+Đăng ký thử cần Internet. Điền tên, số điện thoại/Zalo và tên cửa hàng, đọc thông báo dữ liệu rồi bấm **Bắt đầu dùng thử miễn phí 7 ngày**. Ô đồng ý tiếp thị là tùy chọn, không tích sẵn. Sau khi được cấp thử, tạo quản trị và thêm nhân viên theo PDF.
+
+Hết dùng thử hoặc hết gói có hạn vẫn đăng nhập quản lý để **xem công/ảnh, xuất Excel/CSV và sao lưu**; chỉ khóa ghi công mới và chỉnh sửa. Mua gói rồi nhập mã trả phí để tiếp tục trên dữ liệu cũ. Thông tin liên hệ tự khai chưa được xác minh; không gửi dữ liệu nhân viên, ảnh, công hoặc lương vào danh sách dùng thử.
+
+**Khách trả phí cũ giữ nguyên mã, thời hạn và quyền lợi đã được cấp khi cập nhật trên cùng máy/Windows.**
 
 ## 1. Chuẩn bị trước khi cài
 
@@ -98,6 +112,7 @@ Tài liệu có hình minh họa và hướng dẫn:
 | 11 | Google Drive: xem từ xa, chia sẻ cho kế toán và kiểm tra bản mới |
 | 12 | Google Drive: xử lý lỗi, hết dung lượng, file bị khóa và sai tài khoản |
 | 13 | Cập nhật an toàn và xử lý sự cố thường gặp |
+| 14 | Tự đăng ký dùng thử 7 ngày, hết hạn và mua gói |
 
 ## Lưu ý khi vận hành
 
