@@ -7,7 +7,7 @@ Phần mềm chấm công tại máy cửa hàng, có ảnh đối chiếu, bả
 ## Tải bộ cài và hướng dẫn
 
 - **[TẢI BỘ CÀI WINDOWS MỚI NHẤT](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest)**
-- **[XEM HƯỚNG DẪN SỬ DỤNG PDF - 10 TRANG](docs/LDB-Huong-Dan-Su-Dung.pdf)**
+- **[XEM HƯỚNG DẪN SỬ DỤNG PDF - 13 TRANG](docs/LDB-Huong-Dan-Su-Dung.pdf)**
 - **[TẢI FILE PDF VỀ MÁY](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Su-Dung.pdf)**
 
 Khách chỉ cần bộ cài `.exe`. Tài liệu PDF có thể mở trên máy tính hoặc điện thoại để xem từng bước.
@@ -79,6 +79,8 @@ Phần mềm chạy tại máy cửa hàng. Địa chỉ `127.0.0.1` là địa 
 
 **[Mở bản PDF đầy đủ](docs/LDB-Huong-Dan-Su-Dung.pdf)** hoặc **[tải PDF về máy](https://github.com/longnguyenktqd/ldb-cham-cong-releases/raw/refs/heads/main/docs/LDB-Huong-Dan-Su-Dung.pdf)**.
 
+**Đã bổ sung 3 trang Google Drive chi tiết (trang 10-12):** cài Drive, chọn đúng thư mục báo cáo, kiểm tra đồng bộ, chia sẻ cho kế toán và xử lý lỗi thường gặp.
+
 Tài liệu có hình minh họa và hướng dẫn:
 
 | Trang | Nội dung |
@@ -92,7 +94,10 @@ Tài liệu có hình minh họa và hướng dẫn:
 | 7 | Thiết lập lương cố định, thưởng, điều chỉnh, chốt tháng |
 | 8 | Xuất Excel theo tháng/ngày và báo cáo cho kế toán |
 | 9 | Xem báo cáo từ xa qua Google Drive, sao lưu và tự mở cùng Windows |
-| 10 | Cập nhật an toàn và xử lý sự cố thường gặp |
+| 10 | Google Drive: cài đặt, đăng nhập Gmail và chọn thư mục đồng bộ |
+| 11 | Google Drive: xem từ xa, chia sẻ cho kế toán và kiểm tra bản mới |
+| 12 | Google Drive: xử lý lỗi, hết dung lượng, file bị khóa và sai tài khoản |
+| 13 | Cập nhật an toàn và xử lý sự cố thường gặp |
 
 ## Lưu ý khi vận hành
 
@@ -106,4 +111,4 @@ Tài liệu có hình minh họa và hướng dẫn:
 
 ---
 
-Tài liệu cập nhật ngày **25/11/2026**. Kho này cung cấp bộ cài, thông báo cập nhật và hướng dẫn công khai của LDB.
+Tài liệu cập nhật ngày **26/11/2026**. Kho này cung cấp bộ cài, thông báo cập nhật và hướng dẫn công khai của LDB.

@@ -1,0 +1,56 @@
+name: Refresh public LDB PDF guide
+on:
+  push:
+    branches: [main]
+    paths: ['docs/DRIVE-GUIDE-REVIEWED.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ldb-public-guide
+  cancel-in-progress: false
+jobs:
+  refresh-pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Verify reviewed PDF at this commit
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os, urllib.request, hashlib, pathlib
+          assert os.environ['GITHUB_REPOSITORY'] == 'longnguyenktqd/ldb-cham-cong-releases'
+          url = 'https://raw.githubusercontent.com/' + os.environ['GITHUB_REPOSITORY'] + '/' + os.environ['GITHUB_SHA'] + '/docs/LDB-Huong-Dan-Su-Dung.pdf'
+          data = urllib.request.urlopen(url, timeout=90).read()
+          assert data.startswith(b'%PDF-') and len(data) == 432788
+          assert hashlib.sha256(data).hexdigest() == '2f1b3b9c79684e8fc329135255399afdbacf2d03ccb80d973cb1d2ffff15e263'
+          pathlib.Path('LDB-Huong-Dan-Su-Dung.pdf').write_bytes(data)
+          PY
+      - name: Replace guide only on published 1.0.8
+        shell: bash
+        run: |
+          gh api repos/"$GITHUB_REPOSITORY"/releases/tags/v1.0.8 > before.json
+          python3 - <<'PY'
+          import json
+          j=json.load(open('before.json'))
+          assert not j['draft'] and not j['prerelease'] and j['tag_name']=='v1.0.8'
+          a={x['name']:x for x in j['assets']}
+          assert a['LDB-Cai-Dat-Cham-Cong-1.0.8.exe']['digest']=='sha256:dd1da1f729c0fdb5222298a5f7e3d950441ed5585814942780d33f5a335fb253'
+          assert a['ldb-update.json']['digest']=='sha256:d85afffb839e7a48b3dde09d9918586cbc6bb1f9c9df5953d5791184d03bbdbd'
+          PY
+          gh release upload v1.0.8 LDB-Huong-Dan-Su-Dung.pdf --repo "$GITHUB_REPOSITORY" --clobber
+          gh api repos/"$GITHUB_REPOSITORY"/releases/tags/v1.0.8 > after.json
+          python3 - <<'PY'
+          import json
+          before=json.load(open('before.json')); after=json.load(open('after.json'))
+          a={x['name']:x for x in before['assets']}; b={x['name']:x for x in after['assets']}
+          assert set(a)==set(b)
+          for name in a:
+              if name!='LDB-Huong-Dan-Su-Dung.pdf':
+                  assert a[name]['id']==b[name]['id'] and a[name]['digest']==b[name]['digest']
+          assert b['LDB-Huong-Dan-Su-Dung.pdf']['digest']=='sha256:2f1b3b9c79684e8fc329135255399afdbacf2d03ccb80d973cb1d2ffff15e263'
+          assert b['LDB-Huong-Dan-Su-Dung.pdf']['size']==432788
+          print('GUIDE_UPDATED_INSTALLER_AND_UPDATE_FEED_UNCHANGED')
+          PY
