@@ -1,0 +1,11 @@
+{
+  "version": "1.0.15",
+  "reviewedAt": "2026-11-27T06:56:53.586Z",
+  "expected": {
+    "LDB-Cai-Dat-Cham-Cong-1.0.15.exe": "e2618f6b9ee5dc884ecf4778cd16c09baf6c0db2dee773b2db005460565edd6f",
+    "ldb-update.json": "11a8786a5f8d420a64a2bd85fcaf38639f300d2f35ee83637ad814c7b840a7d1",
+    "LDB-Huong-Dan-Su-Dung.pdf": "2109a176f9b179d4f611d237a757fea70494c0c4d5c1c7467838081b89dcfb85",
+    "LDB-Huong-Dan-Cap-Nhat-1.0.15.txt": "9ed7d7d39b99603548e1697403f255a63ecf0458f4979d177aa1d6f96fed103c"
+  },
+  "size": 36426240
+}

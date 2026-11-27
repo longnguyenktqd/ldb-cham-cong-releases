@@ -4,7 +4,7 @@ Phần mềm chấm công tại máy cửa hàng, có ảnh đối chiếu, bả
 
 **Hotline / Zalo hỗ trợ: [0355636456](https://zalo.me/0355636456)**
 
-## Mới trong bản 1.0.14: giao diện đơn giản hơn
+## Mới trong bản 1.0.15: giao diện đơn giản hơn
 
 - Menu chính còn **Tổng quan, Nhân viên, Chấm công, Lương, Cài đặt**. Các chức năng cũ nằm trong nhóm tương ứng.
 - Tổng quan gom **Việc cần xử lý**, kể cả yêu cầu chờ duyệt, lương chưa trả của các tháng đã chốt và cảnh báo sao lưu.
@@ -42,11 +42,11 @@ Lương tháng cố định hoặc theo giờ, hoa hồng theo doanh số nhập
 
 Khách chỉ cần bộ cài `.exe`. Tài liệu PDF có thể mở trên máy tính hoặc điện thoại để xem từng bước.
 
-## Cập nhật từ bản cũ lên 1.0.14
+## Cập nhật từ bản cũ lên 1.0.15
 
-**[Xem hướng dẫn cập nhật giữ dữ liệu và mã kích hoạt](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Cap-Nhat-1.0.14.txt).**
+**[Xem hướng dẫn cập nhật giữ dữ liệu và mã kích hoạt](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Cap-Nhat-1.0.15.txt).**
 
-Tạo và tải thêm bản sao lưu, dùng đúng tài khoản Windows cũ, thoát LDB ở khay hệ thống rồi chạy bộ cài 1.0.14 bằng quyền quản trị Windows. Bộ cài chuyển dữ liệu sang dịch vụ bảo vệ riêng và giữ mã kích hoạt cùng thời hạn gói cũ. Mở biểu tượng Desktop để kiểm tra lại nhân viên, công và lương.
+Tạo và tải thêm bản sao lưu, dùng đúng tài khoản Windows cũ, thoát LDB ở khay hệ thống rồi chạy bộ cài 1.0.15 bằng quyền quản trị Windows. Bộ cài chuyển dữ liệu sang dịch vụ bảo vệ riêng và giữ mã kích hoạt cùng thời hạn gói cũ. Mở biểu tượng Desktop để kiểm tra lại nhân viên, công và lương.
 
 Khách dùng bản có kiểm tra cập nhật có thể bấm **Kiểm tra bản mới** trong phần mềm. Khi bật kiểm tra tự động, thông báo xuất hiện ở lần kiểm tra tiếp theo; quản lý vẫn cần tải và chạy bộ cài. Máy đã dùng 1.0.8 trở lên sẽ tự tạm dừng dịch vụ khi cài cập nhật sau này.
 
@@ -60,7 +60,7 @@ Khách dùng bản có kiểm tra cập nhật có thể bấm **Kiểm tra bả
 
 Đăng ký thử cần Internet. Điền tên, số điện thoại/Zalo và tên cửa hàng, đọc thông báo dữ liệu rồi bấm **Bắt đầu dùng thử miễn phí 7 ngày**. Ô đồng ý tiếp thị là tùy chọn, không tích sẵn. Sau khi được cấp thử, tạo quản trị và thêm nhân viên theo PDF.
 
-**Giới hạn bản thử từ 1.0.14:** tự xuất báo cáo để đồng bộ Google Drive, chốt/mở lại lương tháng và xuất/in phiếu lương cá nhân dành cho gói trả phí. Mỗi lần bấm sẽ hiện popup gợi ý nâng cấp, có giá gói, nút kích hoạt và Zalo hỗ trợ. Không tự bật popup khi mở phần mềm. Bản thử vẫn chấm công, xem và xuất bảng công cơ bản; dữ liệu đã nhập được giữ khi nâng gói.
+**Giới hạn bản thử từ 1.0.15:** tự xuất báo cáo để đồng bộ Google Drive, chốt/mở lại lương tháng và xuất/in phiếu lương cá nhân dành cho gói trả phí. Mỗi lần bấm sẽ hiện popup gợi ý nâng cấp, có giá gói, nút kích hoạt và Zalo hỗ trợ. Không tự bật popup khi mở phần mềm. Bản thử vẫn chấm công, xem và xuất bảng công cơ bản; dữ liệu đã nhập được giữ khi nâng gói.
 
 Hết dùng thử hoặc hết gói có hạn vẫn đăng nhập quản lý để **xem công/ảnh, xuất Excel/CSV và sao lưu**; chỉ khóa ghi công mới và chỉnh sửa. Mua gói rồi nhập mã trả phí để tiếp tục trên dữ liệu cũ. Thông tin liên hệ tự khai chưa được xác minh; không gửi dữ liệu nhân viên, ảnh, công hoặc lương vào danh sách dùng thử.
 
@@ -159,3 +159,10 @@ Tài liệu có hình minh họa và hướng dẫn:
 ---
 
 Tài liệu cập nhật ngày **26/11/2026**. Kho này cung cấp bộ cài, thông báo cập nhật và hướng dẫn công khai của LDB.
+
+
+### Bảo vệ chương trình trong 1.0.15
+
+Bản 1.0.15 tăng bảo vệ mã chương trình và kiểm tra bản quyền; giữ dữ liệu, mã kích hoạt, thời hạn và cách tính lương cũ. Khách cập nhật trên cùng máy/Windows, tải sao lưu trước khi cài. Nếu phát hiện thành phần chương trình bị thay đổi, cài lại bộ chính thức; không xóa dữ liệu hoặc mã kích hoạt. Không cam kết chống phân tích hoặc bẻ khóa tuyệt đối.
+
+Kho này chỉ phân phối bộ cài và tài liệu công khai, không chứa dự án mã nguồn riêng hoặc khóa cấp mã. Hai mục Source code do GitHub tự tạo; từ v1.0.15 bản nén này chỉ giữ hướng dẫn kho. Khách cài bằng tệp LDB-Cai-Dat-Cham-Cong-1.0.15.exe trong Assets.
