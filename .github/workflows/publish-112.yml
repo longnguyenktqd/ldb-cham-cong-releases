@@ -1,0 +1,80 @@
+name: Publish LDB 1.0.12
+on:
+  push:
+    branches: [main]
+    paths: ['distribution/v1.0.12/READY.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ldb-publish-v1.0.12
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Fetch and verify reviewed public release files
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os, pathlib, urllib.request, hashlib, json, base64, subprocess, time
+          repo = os.environ['GITHUB_REPOSITORY']
+          assert repo == 'longnguyenktqd/ldb-cham-cong-releases'
+          base = 'https://raw.githubusercontent.com/' + repo + '/' + os.environ['GITHUB_SHA'] + '/distribution/v1.0.12/'
+          folder = pathlib.Path('release-files')
+          folder.mkdir()
+          expected = {"LDB-Cai-Dat-Cham-Cong-1.0.12.exe":"94235c397cf644f29f38ff9e70c9e6e018e2a5c9269378d91d3c2c176568442a","ldb-update.json":"aa4435ffc185c9e627874a39f07148619d45b227fc2fcf1ae5d7bde6e470ac4d","LDB-Huong-Dan-Su-Dung.pdf":"dfe4d481a957e064a623fa6f245e8dabe8d2639cfd209ad1199266d7f2fe469f","LDB-Huong-Dan-Cap-Nhat-1.0.12.txt":"f691a0c23ce3c8487c0ec4f6afedd173dedd91caf8bc144e3a3e681d64225ff6"}
+          for name, digest in expected.items():
+              target = folder / name
+              for attempt in range(3):
+                  try:
+                      with urllib.request.urlopen(base + name, timeout=90) as response, target.open('wb') as output:
+                          while True:
+                              chunk = response.read(1024 * 1024)
+                              if not chunk: break
+                              output.write(chunk)
+                      assert hashlib.sha256(target.read_bytes()).hexdigest() == digest, 'Release hash mismatch'
+                      break
+                  except Exception:
+                      if attempt == 2: raise
+                      time.sleep(3)
+          assert (folder / 'LDB-Cai-Dat-Cham-Cong-1.0.12.exe').stat().st_size == 36408320
+          assert (folder / 'LDB-Huong-Dan-Su-Dung.pdf').read_bytes().startswith(b'%PDF-')
+          envelope = json.loads((folder / 'ldb-update.json').read_text())
+          decode = lambda value: base64.urlsafe_b64decode(value + '=' * (-len(value) % 4))
+          payload_bytes = decode(envelope['payload'])
+          payload = json.loads(payload_bytes)
+          assert payload['kind'] == 'ldb-update' and payload['product'] == 'LDB-ChamCong-CuaHang'
+          assert payload['repository'] == repo and payload['version'] == '1.0.12'
+          assert payload['url'] == 'https://github.com/' + repo + '/releases/download/v1.0.12/LDB-Cai-Dat-Cham-Cong-1.0.12.exe'
+          assert payload['sha256'] == expected['LDB-Cai-Dat-Cham-Cong-1.0.12.exe'] and payload['size'] == 36408320 and not payload['paidUpgrade']
+          assert payload['publishedAt'] <= int(time.time() * 1000) + 300000 < payload['expiresAt']
+          pathlib.Path('payload.json').write_bytes(payload_bytes)
+          pathlib.Path('signature.bin').write_bytes(decode(envelope['signature']))
+          pathlib.Path('public.pem').write_text("-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA+grgQCTndubRyvahmYNg\nMLPM79pAbUpuf+9KKnid8qSl3lGxVPO0mHRJ8bMkOe4bOKgHySHjPo/5jCmYgwL4\n8h/4iVsJPUf5s0i4aRZ8WrI1Y21MbYOTGSgiWwQoFcYYzFdD9QagximHy9AT/l5O\n2jkRFjIRNC9UmWTE8/wIrC2a6gl4IxTbtbhXaAGZaENqbZI/tzlKWYdM4nS273ZV\neQj60843fM+GcR4UTB77NthCVTLnFrZsLsPN3KbK0CruwJJGLih/oi7GvLyRDJk+\nfUU7COpbwNNSLWZc4q0+0Xu0qV+aLpNz9lnmXgXVjF11LPPFKX0yhxbfir/aANtI\ntda6aTb7Mwpjurq2T3lVd671s4u6pkFsZotH1EX9pNJWGNFFJRwqTzkoViIgc858\n0Nm2eTM538GSVpcjBx9Q2h+8bRw4BQcPB8wRuz5gLBW1n68lpC9wUq3WXU3QtAQV\nK5PqbuVmmxzQNm3ugkpvTrD0F5SFlPNzYslF+5CPYBOhAgMBAAE=\n-----END PUBLIC KEY-----\n")
+          subprocess.run(['openssl','dgst','-sha256','-verify','public.pem','-signature','signature.bin','payload.json'],check=True)
+          with urllib.request.urlopen(base + 'RELEASE-NOTES.md', timeout=60) as response:
+              pathlib.Path('release-notes.md').write_bytes(response.read())
+          pathlib.Path('expected-hashes.txt').write_text(''.join(value + '  ' + name + '\n' for name,value in expected.items()))
+          print('Installer, signed feed, PDF and customer instructions verified')
+          PY
+      - name: Create draft with all customer assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view v1.0.12 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo 'Release v1.0.12 already exists; refusing to overwrite it.'
+            exit 1
+          fi
+          gh release create v1.0.12 "release-files/LDB-Cai-Dat-Cham-Cong-1.0.12.exe" "release-files/ldb-update.json" "release-files/LDB-Huong-Dan-Su-Dung.pdf" "release-files/LDB-Huong-Dan-Cap-Nhat-1.0.12.txt" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title 'Chấm công cửa hàng LDB 1.0.12' --notes-file release-notes.md --draft
+      - name: Verify uploaded assets and publish as latest
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir verify-release
+          gh release download v1.0.12 --repo "$GITHUB_REPOSITORY" --dir verify-release --pattern 'LDB-Cai-Dat-Cham-Cong-1.0.12.exe' --pattern 'ldb-update.json' --pattern 'LDB-Huong-Dan-Su-Dung.pdf' --pattern 'LDB-Huong-Dan-Cap-Nhat-1.0.12.txt'
+          (cd verify-release && sha256sum -c ../expected-hashes.txt)
+          gh release edit v1.0.12 --repo "$GITHUB_REPOSITORY" --draft=false --latest

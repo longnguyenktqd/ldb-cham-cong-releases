@@ -1,0 +1,56 @@
+﻿CHẤM CÔNG CỬA HÀNG LDB 1.0.12
+
+CÀI ĐẶT / CẬP NHẬT
+Chạy LDB-Cai-Dat-Cham-Cong-1.0.12.exe và cho phép quyền quản trị Windows.
+Nếu đang dùng bản 1.0.7 trở xuống: đăng nhập đúng tài khoản Windows đã dùng chấm công, thoát LDB ở khay gần đồng hồ rồi chạy bộ cài. Bộ cài chuyển và đối chiếu dữ liệu, giữ nhân viên, giờ công, ảnh, lương và mã kích hoạt. Không xóa dữ liệu cũ.
+Mở biểu tượng Chấm công cửa hàng LDB trên Desktop sau khi cài. Không chạy riêng file trong thư mục service.
+
+BẢO VỆ DỮ LIỆU
+Chương trình nằm tại Program Files\LDB-ChamCong. Dữ liệu và bản quyền do dịch vụ LDBChamCong quản lý tại ProgramData\LDB-ChamCong\private. Chấm công không cần cấp quyền quản trị Windows.
+Nhân viên dùng tài khoản Windows Standard; chủ cửa hàng giữ riêng tài khoản quản trị Windows và mật khẩu quản lý LDB. Người có toàn quyền quản trị Windows vẫn có thể can thiệp máy.
+Sao lưu & Thiết lập: giữ bản sao theo lịch/dung lượng; mặc định không xóa ảnh cũ. Quản lý chọn thời gian lưu ảnh và xác nhận bằng mật khẩu nếu cần. Không xóa công và lương theo chính sách ảnh.
+Bản sao trước chuyển bảo vệ được giữ riêng, không thuộc lịch dọn tự động. Báo cáo Excel là file dùng cho kế toán; không để quyền chia sẻ Drive công khai.
+
+KÍCH HOẠT
+Khách đang dùng giữ nguyên mã kích hoạt và mã máy khi cập nhật trên cùng Windows/máy. Không cần mua hoặc cấp lại mã chỉ vì lên 1.0.12.
+Bản thử giữ xuất dữ liệu cơ bản; tự xuất Drive, chốt/mở tháng lương và xuất/in phiếu lương cá nhân cần gói trả phí. Bấm tính năng bị khóa sẽ hiện popup nâng cấp. Khách mới đăng ký dùng thử miễn phí 7 ngày trong phần mềm (cần Internet lần đầu). Hết thử vẫn đăng nhập quản lý xem, xuất và sao lưu; không ghi/sửa công mới. Khi mua, gửi mã máy TEP-… cho LDB, nhận mã TEPRO1.… rồi dán để tiếp tục trên dữ liệu cũ. Gói 300.000đ/1 năm; 500.000đ trọn đời phiên bản đã mua, hỗ trợ 12 tháng; nâng cấp lớn tính riêng.
+
+SỬ DỤNG
+Lần đầu tạo mật khẩu quản lý, thêm nhân viên với mã và PIN riêng. Khóa quản lý để về màn hình nhân viên. Nhân viên chọn Vào ca / Tan ca. Ảnh chỉ dùng đối chiếu, không có nhận diện khuôn mặt; camera lỗi vẫn ghi công có ghi chú.
+Kế toán: quản lý xem Bảng công theo ngày/tháng, chọn lương tháng hoặc lương giờ, nhập doanh số đã trừ hoàn/hủy và tỷ lệ hoa hồng, phụ cấp có tên, thưởng, điều chỉnh và tạm ứng, đối chiếu rồi chốt tháng và tải Excel/phiếu lương.
+Có thể bật tự mở màn hình khi đăng nhập Windows trong Cài đặt. Dịch vụ dữ liệu tự chạy cùng Windows dù đóng trình duyệt.
+
+SAO LƯU / DRIVE / KHÔI PHỤC
+Tải bản sao lưu qua Cài đặt; giữ thêm một bản ngoài máy. Google Drive đồng bộ thư mục báo cáo, không đồng bộ cả vùng dữ liệu bảo vệ. Đường dẫn báo cáo cũ được giữ khi chuyển từ 1.0.7 nếu đã tồn tại; máy mới dùng ProgramData\LDB-ChamCong\reports.
+USB/ổ ngoài phải cho tài khoản LOCAL SERVICE quyền ghi vào thư mục sao lưu; chủ cửa hàng thiết lập quyền Windows nếu bị từ chối. Ổ mạng gắn theo tài khoản người dùng có thể không dùng được từ dịch vụ.
+Khôi phục: chạy KHOI-PHUC-DU-LIEU.cmd, chủ cửa hàng xác nhận quyền quản trị Windows và chọn file .sqlite. Dữ liệu hiện tại được sao lưu trước thay. Mã kích hoạt không bị khôi phục hoặc thay đổi theo file công.
+Cài lại bằng bộ cài để sửa file chương trình thiếu/hỏng; không tự xóa vùng private.
+
+Hotline / Zalo hỗ trợ: 0355636456
+Bộ cài chưa có chứng thư nhà phát hành Windows nếu không kèm xác nhận ký mã. Chỉ tải từ kênh chính thức LDB.
+
+LƯƠNG NÂNG CAO 1.0.12
+Quản lý > Lương tháng > chọn tháng > Thiết lập/Điều chỉnh nhân viên. Chọn tháng cố định hoặc theo giờ. Nhập doanh số sau hoàn/hủy, % hoa hồng và các phụ cấp có tên. Kiểm tra dự kiến trước khi lưu và chốt. Doanh số nhập thủ công; chưa kết nối bán hàng. Tháng mới không tự sao chép doanh số/phụ cấp/thưởng. Không tự áp hệ số tăng ca/ngày lễ hoặc thuế/bảo hiểm.
+Cách tính cũ vẫn mặc định cho khách đang dùng. Tháng đã chốt giữ số tiền và thiết lập cũ. PDF trang 15–16 hướng dẫn các chức năng mới.
+
+# Chấm công cửa hàng LDB 1.0.12
+
+- **Hướng dẫn thiết lập lần đầu:** tạo quản lý → thêm nhân viên → thử camera → thử mã/PIN → tải sao lưu. Phép thử không ghi giờ công; camera là tùy chọn. Khách cũ có thể mở hướng dẫn từ menu, không phải thiết lập lại.
+- **Sao chép thiết lập lương tháng trước:** xem trước, chọn nhân viên và xác nhận. Giữ cách tính, lương tháng/đơn giá giờ và tỷ lệ hoa hồng; không ghi đè lương tháng đích. Doanh số, phút nghỉ, thưởng, điều chỉnh và tạm ứng về 0. Phụ cấp chỉ sao chép khi tích chọn.
+- **Kiểm tra trước chốt:** gom các mục chặn và cảnh báo để đối soát; dữ liệu đổi sau khi kiểm tra sẽ yêu cầu kiểm tra lại trước khi chốt.
+- **Lịch ca đơn giản:** nhiều ca không trùng, hỗ trợ qua đêm, đối chiếu muộn/về sớm theo mức bỏ qua đã chọn. Chỉ cảnh báo, không tự sửa công hoặc trừ lương. Lịch của tháng đã chốt giữ theo lần chốt.
+- **In bộ phiếu lương cả tháng:** mở tất cả nhân viên đã thiết lập lương, in/lưu một PDF; mỗi phiếu bắt đầu trang riêng. Dùng quyền phiếu lương của gói trả phí.
+
+## Khách đang dùng
+Giữ nguyên dữ liệu, mã kích hoạt, thời hạn, cách tính lương cố định cũ và các tháng đã chốt. Không cần cấp lại mã chỉ vì lên 1.0.12. Các chức năng mới chỉ ghi thay đổi khi quản lý chủ động thao tác.
+
+Tải thêm bản sao lưu, tải **LDB-Cai-Dat-Cham-Cong-1.0.12.exe** và chạy trên cùng máy/Windows. Chủ cửa hàng xác nhận quyền quản trị, chờ hoàn tất rồi mở LDB trên Desktop. Chưa tự cài đè bản mới lên máy đang vận hành.
+
+## Hướng dẫn
+PDF **LDB-Huong-Dan-Su-Dung.pdf** có **18 trang**: 10–12 đồng bộ Google Drive, 14 dùng thử, 15–16 tính lương, 17–18 các chức năng mới. File **LDB-Huong-Dan-Cap-Nhat-1.0.12.txt** có hướng dẫn cài/cập nhật.
+
+Dùng thử miễn phí 7 ngày. Gói mới **300.000đ/năm** hoặc **500.000đ/trọn đời phiên bản đã mua**, hỗ trợ 12 tháng; nâng cấp lớn tính riêng. Bản thử khóa tự xuất Drive, chốt/mở tháng và xuất/in phiếu lương cá nhân hoặc cả tháng. Hết thử vẫn xem/xuất dữ liệu cơ bản và sao lưu.
+
+Đã qua 81 kiểm tra tự động, kiểm tra giao diện và bộ cài nâng cấp từ 1.0.11 trong môi trường riêng. Đã kiểm tra in PDF hai nhân viên trên hai trang và giữ nguyên công cụ/khóa cấp mã. Lần quét Defender ngày 27/11/2026 không ghi nhận mối đe dọa; bộ cài chưa có chứng thư nhà phát hành Windows.
+
+**Hotline / Zalo: 0355636456**
