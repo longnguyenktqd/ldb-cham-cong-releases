@@ -1,0 +1,10 @@
+{
+  "version": "1.0.16",
+  "expected": {
+    "LDB-Cai-Dat-Cham-Cong-1.0.16.exe": "89084b08f006cab65fe79dc569a5c467d70e5188b3396930ccebbd42aa09ee21",
+    "ldb-update.json": "85a43fb0dc4fccff23ca466acd259fa19c66a2e0cd26563fe748e275d2063432",
+    "LDB-Huong-Dan-Su-Dung.pdf": "2109a176f9b179d4f611d237a757fea70494c0c4d5c1c7467838081b89dcfb85",
+    "LDB-Huong-Dan-Cap-Nhat-1.0.16.txt": "63030b0a5866cc148d8923b4767fba2144457b644b7d896911e572228d9cf07a"
+  },
+  "installerChunks": 70
+}

@@ -1,0 +1,73 @@
+CHẤM CÔNG CỬA HÀNG LDB 1.0.16
+
+CÀI ĐẶT / CẬP NHẬT
+Chạy LDB-Cai-Dat-Cham-Cong-1.0.16.exe và cho phép quyền quản trị Windows.
+Nếu đang dùng bản 1.0.7 trở xuống: đăng nhập đúng tài khoản Windows đã dùng chấm công, thoát LDB ở khay gần đồng hồ rồi chạy bộ cài. Bộ cài chuyển và đối chiếu dữ liệu, giữ nhân viên, giờ công, ảnh, lương và mã kích hoạt. Không xóa dữ liệu cũ.
+Mở biểu tượng Chấm công cửa hàng LDB trên Desktop sau khi cài. Không chạy riêng file trong thư mục service.
+
+BẢO VỆ DỮ LIỆU
+Chương trình nằm tại Program Files\LDB-ChamCong. Dữ liệu và bản quyền do dịch vụ LDBChamCong quản lý tại ProgramData\LDB-ChamCong\private. Chấm công không cần cấp quyền quản trị Windows.
+Nhân viên dùng tài khoản Windows Standard; chủ cửa hàng giữ riêng tài khoản quản trị Windows và mật khẩu quản lý LDB. Người có toàn quyền quản trị Windows vẫn có thể can thiệp máy.
+Sao lưu & Thiết lập: giữ bản sao theo lịch/dung lượng; mặc định không xóa ảnh cũ. Quản lý chọn thời gian lưu ảnh và xác nhận bằng mật khẩu nếu cần. Không xóa công và lương theo chính sách ảnh.
+Bản sao trước chuyển bảo vệ được giữ riêng, không thuộc lịch dọn tự động. Báo cáo Excel là file dùng cho kế toán; không để quyền chia sẻ Drive công khai.
+
+KÍCH HOẠT
+Khách đang dùng giữ nguyên mã kích hoạt và mã máy khi cập nhật trên cùng Windows/máy. Không cần mua hoặc cấp lại mã chỉ vì lên 1.0.16.
+Bản thử giữ xuất dữ liệu cơ bản; tự xuất Drive, chốt/mở tháng lương và xuất/in phiếu lương cá nhân cần gói trả phí. Bấm tính năng bị khóa sẽ hiện popup nâng cấp. Khách mới đăng ký dùng thử miễn phí 7 ngày trong phần mềm (cần Internet lần đầu). Hết thử vẫn đăng nhập quản lý xem, xuất và sao lưu; không ghi/sửa công mới. Khi mua, gửi mã máy TEP-… cho LDB, nhận mã TEPRO1.… rồi dán để tiếp tục trên dữ liệu cũ. Gói 300.000đ/1 năm; 500.000đ trọn đời phiên bản đã mua, hỗ trợ 12 tháng; nâng cấp lớn tính riêng.
+
+SỬ DỤNG
+Lần đầu tạo mật khẩu quản lý, thêm nhân viên với mã và PIN riêng. Khóa quản lý để về màn hình nhân viên. Nhân viên chọn Vào ca / Tan ca. Ảnh chỉ dùng đối chiếu, không có nhận diện khuôn mặt; camera lỗi vẫn ghi công có ghi chú.
+Kế toán: quản lý xem Bảng công theo ngày/tháng, chọn lương tháng hoặc lương giờ, nhập doanh số đã trừ hoàn/hủy và tỷ lệ hoa hồng, phụ cấp có tên, thưởng, điều chỉnh và tạm ứng, đối chiếu rồi chốt tháng và tải Excel/phiếu lương.
+Có thể bật tự mở màn hình khi đăng nhập Windows trong Cài đặt. Dịch vụ dữ liệu tự chạy cùng Windows dù đóng trình duyệt.
+
+SAO LƯU / DRIVE / KHÔI PHỤC
+Tải bản sao lưu qua Cài đặt; giữ thêm một bản ngoài máy. Google Drive đồng bộ thư mục báo cáo, không đồng bộ cả vùng dữ liệu bảo vệ. Đường dẫn báo cáo cũ được giữ khi chuyển từ 1.0.7 nếu đã tồn tại; máy mới dùng ProgramData\LDB-ChamCong\reports.
+USB/ổ ngoài phải cho tài khoản LOCAL SERVICE quyền ghi vào thư mục sao lưu; chủ cửa hàng thiết lập quyền Windows nếu bị từ chối. Ổ mạng gắn theo tài khoản người dùng có thể không dùng được từ dịch vụ.
+Khôi phục: chạy KHOI-PHUC-DU-LIEU.cmd, chủ cửa hàng xác nhận quyền quản trị Windows và chọn file .sqlite. Dữ liệu hiện tại được sao lưu trước thay. Mã kích hoạt không bị khôi phục hoặc thay đổi theo file công.
+Cài lại bằng bộ cài để sửa file chương trình thiếu/hỏng; không tự xóa vùng private.
+
+Hotline / Zalo hỗ trợ: 0355636456
+Bộ cài chưa có chứng thư nhà phát hành Windows nếu không kèm xác nhận ký mã. Chỉ tải từ kênh chính thức LDB.
+
+LƯƠNG NÂNG CAO 1.0.16
+Quản lý > Lương > Lương tháng > chọn tháng > Thiết lập/Điều chỉnh nhân viên. Chọn tháng cố định hoặc theo giờ. Nhập doanh số sau hoàn/hủy, % hoa hồng và các phụ cấp có tên. Kiểm tra dự kiến trước khi lưu và chốt. Doanh số nhập thủ công; chưa kết nối bán hàng. Tháng mới không tự sao chép doanh số/phụ cấp/thưởng. Không tự áp hệ số tăng ca/ngày lễ hoặc thuế/bảo hiểm.
+Cách tính cũ vẫn mặc định cho khách đang dùng. Tháng đã chốt giữ số tiền và thiết lập cũ. PDF trang 15–16 hướng dẫn các chức năng mới.
+
+LDB 1.0.16 — Tăng bảo vệ chương trình và bản quyền
+
+- Thu gọn và đổi tên biến nội bộ trong mã phát hành để hạn chế việc đọc, sao chép và sửa trực tiếp; không phát hành bản đồ mã nguồn hoặc dữ liệu gỡ lỗi.
+- Bổ sung kiểm tra chữ ký và tính toàn vẹn ở chương trình mở LDB, dịch vụ nền và lớp bản quyền. Thành phần thiếu, bị sửa hoặc tệp lạ không được ký sẽ bị từ chối.
+- Đối chiếu độc lập mã kích hoạt đã ký với gói và thời hạn sử dụng; tiếp tục phân biệt khóa dùng thử với khóa trả phí.
+- Giữ cấu hình chặn mở rộng tham số Node từ môi trường. Không bổ sung yêu cầu Internet định kỳ cho khách trả phí đang dùng ngoại tuyến.
+
+Cập nhật trên cùng máy và Windows: tải bản sao lưu, chạy LDB-Cai-Dat-Cham-Cong-1.0.16.exe, xác nhận quyền quản trị Windows và chờ hoàn tất. Mở lại LDB từ Desktop. Không xóa hoặc di chuyển vùng dữ liệu bảo vệ.
+
+Giữ nguyên nhân viên, giờ công, ảnh, lương, tháng đã chốt, mã máy, mã kích hoạt và thời hạn đã mua. Khóa cấp mã, thuật toán mã máy và phần tính lương không thay đổi. Mã cũ theo giá 200.000đ/năm hoặc 350.000đ trọn đời vẫn giữ quyền đã cấp; khách không cần mua lại chỉ vì cập nhật này. Hết gói vẫn giữ quyền xem/xuất dữ liệu theo quy định hiện tại.
+
+Đã kiểm tra 89 kiểm tra tự động trên mã gốc và bản thu gọn, giao diện, mã kích hoạt cũ, phát hiện sửa file, nâng cấp từ 1.0.14, chấm công/sao lưu và giữ lương trong dữ liệu thử. Quét Defender ngày 27/11/2026 không ghi nhận phát hiện ở thời điểm kiểm tra. Bộ cài chưa có chứng thư nhà phát hành Windows.
+
+Đây là tăng độ khó phân tích và sửa chương trình, không cam kết chống sao chép/bẻ khóa tuyệt đối. Người có toàn quyền quản trị Windows vẫn có khả năng can thiệp máy. Chủ cửa hàng nên giữ tài khoản quản trị Windows riêng; nhân viên dùng tài khoản Standard.
+
+Giao diện và hướng dẫn sử dụng giữ như 1.0.14; PDF hiện tại có 23 trang, trang 22–23 hướng dẫn menu 5 nhóm và làm lương 3 bước. Khi LDB báo thành phần chương trình hỏng/bị thay đổi, cài lại bộ chính thức để sửa; không cần xóa dữ liệu hoặc mã kích hoạt.
+
+Dùng thử miễn phí 7 ngày. Gói mới 300.000đ/năm hoặc 500.000đ/trọn đời phiên bản đã mua; hỗ trợ 12 tháng, nâng cấp lớn tính riêng.
+Hotline / Zalo: 0355636456
+
+
+LƯU Ý RIÊNG BẢN 1.0.16
+LDB 1.0.16 — Đăng ký dùng thử đơn giản hơn
+
+- Tự đăng ký dùng thử miễn phí 7 ngày. Biểu mẫu còn hai ô: đồng ý gửi thông tin để cấp dùng thử và lựa chọn đo quảng cáo Meta không bắt buộc, mặc định không tích. Không tự đăng ký nhận tiếp thị.
+- Chỉ khi khách đồng ý, sau khi phần mềm xác minh kích hoạt dùng thử thành công mới gửi CompleteRegistration. Chỉ chia sẻ sự kiện và số điện thoại đã băm; không gửi tên cửa hàng, mã máy, dữ liệu nhân viên, ảnh, giờ công hoặc lương. Lựa chọn này không ảnh hưởng quyền dùng thử.
+- Sửa xử lý số điện thoại khi Google Sheets lưu thành số; chống gửi trùng và thử lại khi lỗi kết nối. Lỗi đo quảng cáo không ngăn khách dùng thử.
+
+Giữ nguyên nhân viên, giờ công, ảnh, lương, tháng đã chốt, mã máy, mã kích hoạt và thời hạn đã mua. Cách tính lương cũ và khóa cấp mã không thay đổi. Mã cũ theo gói 200.000đ/năm hoặc 350.000đ trọn đời tiếp tục giữ quyền đã cấp. Khách không cần mua lại hoặc đăng ký lại chỉ vì cập nhật.
+
+Cách cập nhật: tải bản sao lưu trong LDB, chạy LDB-Cai-Dat-Cham-Cong-1.0.16.exe trên đúng máy/Windows đang sử dụng, xác nhận quyền quản trị và chờ hoàn tất. Mở lại biểu tượng LDB trên Desktop. Không xóa hay di chuyển vùng dữ liệu bảo vệ.
+
+Đã qua 104 kiểm tra tự động trên mã nguồn và bản thu gọn; kiểm tra giao diện hai lựa chọn, nâng cấp từ 1.0.15 và mã kích hoạt cũ trong vùng thử riêng. Defender không ghi nhận phát hiện liên quan trong lần quét bộ cài cuối ngày 28/11/2026 (giờ Việt Nam). Bộ cài chưa có chứng thư nhà phát hành Windows. Google Drive từng cảnh báo bộ cài thử; kết quả Defender không phải xác nhận Google đã gỡ cảnh báo. Nếu phần mềm bảo vệ cảnh báo, dừng cài đặt và liên hệ hỗ trợ; không tắt bảo vệ hoặc tự bỏ qua cảnh báo.
+
+PDF hướng dẫn hiện hành đi kèm gồm 23 trang; cách chấm công, tính lương và đồng bộ Google Drive giữ như phiên bản trước. Hướng dẫn cập nhật TXT có thêm lưu ý của 1.0.16.
+
+Dùng thử miễn phí 7 ngày. 300.000đ/năm hoặc 500.000đ/trọn đời phiên bản đã mua, hỗ trợ 12 tháng; nâng cấp lớn tính riêng.
+Hotline / Zalo: 0355636456
