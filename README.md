@@ -4,7 +4,16 @@ Phần mềm chấm công tại máy cửa hàng, có ảnh đối chiếu, bả
 
 **Hotline / Zalo hỗ trợ: [0355636456](https://zalo.me/0355636456)**
 
-## Mới trong bản 1.0.13
+## Mới trong bản 1.0.14: giao diện đơn giản hơn
+
+- Menu chính còn **Tổng quan, Nhân viên, Chấm công, Lương, Cài đặt**. Các chức năng cũ nằm trong nhóm tương ứng.
+- Tổng quan gom **Việc cần xử lý**, kể cả yêu cầu chờ duyệt, lương chưa trả của các tháng đã chốt và cảnh báo sao lưu.
+- Làm lương theo **Chuẩn bị → Kiểm tra & Chốt → Trả lương & In phiếu**. Chuyển bước không tự ghi hoặc sửa dữ liệu.
+- Tiền có phần xem lại dạng **6.000.000 đ**; ngày/giờ hiển thị rõ theo giờ Việt Nam. Giá trị nhập gốc và phép tính giữ nguyên.
+- Nhớ lựa chọn quản lý trên trình duyệt; có tắt/đặt lại trong Cài đặt. Không lưu PIN, mật khẩu hoặc số liệu lương trong lựa chọn. Màn hình nhân viên tự làm sạch ô nhập.
+- PDF trang **22-23** chỉ vị trí mới của từng chức năng. Cập nhật giữ dữ liệu, mã kích hoạt, cách tính lương cũ và tháng đã chốt.
+
+## Các chức năng đã có
 
 - Mẫu lịch tuần và sao chép 7 ngày, xem trước trước khi áp dụng; không ghi đè ca trùng hoặc tháng đã chốt.
 - Nhân viên mở **Công của tôi** bằng mã/PIN, chỉ xem công và lịch của mình tại máy cửa hàng. Phiên tự đóng, đổi PIN hoặc khóa tài khoản sẽ thu hồi quyền xem.
@@ -28,16 +37,16 @@ Lương tháng cố định hoặc theo giờ, hoa hồng theo doanh số nhập
 ## Tải bộ cài và hướng dẫn
 
 - **[TẢI BỘ CÀI WINDOWS MỚI NHẤT](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest)**
-- **[XEM HƯỚNG DẪN SỬ DỤNG PDF - 21 TRANG](docs/LDB-Huong-Dan-Su-Dung.pdf)**
+- **[XEM HƯỚNG DẪN SỬ DỤNG PDF - 23 TRANG](docs/LDB-Huong-Dan-Su-Dung.pdf)**
 - **[TẢI FILE PDF VỀ MÁY](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Su-Dung.pdf)**
 
 Khách chỉ cần bộ cài `.exe`. Tài liệu PDF có thể mở trên máy tính hoặc điện thoại để xem từng bước.
 
-## Cập nhật từ bản cũ lên 1.0.13
+## Cập nhật từ bản cũ lên 1.0.14
 
-**[Xem hướng dẫn cập nhật giữ dữ liệu và mã kích hoạt](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Cap-Nhat-1.0.13.txt).**
+**[Xem hướng dẫn cập nhật giữ dữ liệu và mã kích hoạt](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Cap-Nhat-1.0.14.txt).**
 
-Tạo và tải thêm bản sao lưu, dùng đúng tài khoản Windows cũ, thoát LDB ở khay hệ thống rồi chạy bộ cài 1.0.13 bằng quyền quản trị Windows. Bộ cài chuyển dữ liệu sang dịch vụ bảo vệ riêng và giữ mã kích hoạt cùng thời hạn gói cũ. Mở biểu tượng Desktop để kiểm tra lại nhân viên, công và lương.
+Tạo và tải thêm bản sao lưu, dùng đúng tài khoản Windows cũ, thoát LDB ở khay hệ thống rồi chạy bộ cài 1.0.14 bằng quyền quản trị Windows. Bộ cài chuyển dữ liệu sang dịch vụ bảo vệ riêng và giữ mã kích hoạt cùng thời hạn gói cũ. Mở biểu tượng Desktop để kiểm tra lại nhân viên, công và lương.
 
 Khách dùng bản có kiểm tra cập nhật có thể bấm **Kiểm tra bản mới** trong phần mềm. Khi bật kiểm tra tự động, thông báo xuất hiện ở lần kiểm tra tiếp theo; quản lý vẫn cần tải và chạy bộ cài. Máy đã dùng 1.0.8 trở lên sẽ tự tạm dừng dịch vụ khi cài cập nhật sau này.
 
@@ -51,7 +60,7 @@ Khách dùng bản có kiểm tra cập nhật có thể bấm **Kiểm tra bả
 
 Đăng ký thử cần Internet. Điền tên, số điện thoại/Zalo và tên cửa hàng, đọc thông báo dữ liệu rồi bấm **Bắt đầu dùng thử miễn phí 7 ngày**. Ô đồng ý tiếp thị là tùy chọn, không tích sẵn. Sau khi được cấp thử, tạo quản trị và thêm nhân viên theo PDF.
 
-**Giới hạn bản thử từ 1.0.13:** tự xuất báo cáo để đồng bộ Google Drive, chốt/mở lại lương tháng và xuất/in phiếu lương cá nhân dành cho gói trả phí. Mỗi lần bấm sẽ hiện popup gợi ý nâng cấp, có giá gói, nút kích hoạt và Zalo hỗ trợ. Không tự bật popup khi mở phần mềm. Bản thử vẫn chấm công, xem và xuất bảng công cơ bản; dữ liệu đã nhập được giữ khi nâng gói.
+**Giới hạn bản thử từ 1.0.14:** tự xuất báo cáo để đồng bộ Google Drive, chốt/mở lại lương tháng và xuất/in phiếu lương cá nhân dành cho gói trả phí. Mỗi lần bấm sẽ hiện popup gợi ý nâng cấp, có giá gói, nút kích hoạt và Zalo hỗ trợ. Không tự bật popup khi mở phần mềm. Bản thử vẫn chấm công, xem và xuất bảng công cơ bản; dữ liệu đã nhập được giữ khi nâng gói.
 
 Hết dùng thử hoặc hết gói có hạn vẫn đăng nhập quản lý để **xem công/ảnh, xuất Excel/CSV và sao lưu**; chỉ khóa ghi công mới và chỉnh sửa. Mua gói rồi nhập mã trả phí để tiếp tục trên dữ liệu cũ. Thông tin liên hệ tự khai chưa được xác minh; không gửi dữ liệu nhân viên, ảnh, công hoặc lương vào danh sách dùng thử.
 
