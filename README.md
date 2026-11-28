@@ -4,7 +4,15 @@ Phần mềm chấm công tại máy cửa hàng, có ảnh đối chiếu, bả
 
 **Hotline / Zalo hỗ trợ: [0355636456](https://zalo.me/0355636456)**
 
-## Mới trong bản 1.0.15: giao diện đơn giản hơn
+## Mới trong bản 1.0.17: sửa lỗi camera
+
+- Sửa thông báo **“Dữ liệu quá lớn”** khi webcam đã có hình nhưng chấm công thất bại.
+- Kiểm tra mã/PIN trước; ảnh chỉ gửi một lần ở bước ghi công. Camera lỗi vẫn ghi công và ghi chú không có ảnh.
+- Giữ nguyên dữ liệu, mã máy/mã kích hoạt, thời hạn gói, cách tính lương và tháng đã chốt trên cùng máy/Windows.
+- Đã qua 105 kiểm tra tự động, kiểm tra bộ cài và nâng cấp từ 1.0.16 trong vùng thử riêng. Thử lại với webcam thật ở cửa hàng sau cập nhật.
+- Khách cũ bấm **Kiểm tra bản mới** trong LDB, tải và chạy bộ cài; bản này là cập nhật miễn phí, không cần cấp lại mã.
+
+## Giao diện đơn giản hơn
 
 - Menu chính còn **Tổng quan, Nhân viên, Chấm công, Lương, Cài đặt**. Các chức năng cũ nằm trong nhóm tương ứng.
 - Tổng quan gom **Việc cần xử lý**, kể cả yêu cầu chờ duyệt, lương chưa trả của các tháng đã chốt và cảnh báo sao lưu.
@@ -42,11 +50,11 @@ Lương tháng cố định hoặc theo giờ, hoa hồng theo doanh số nhập
 
 Khách chỉ cần bộ cài `.exe`. Tài liệu PDF có thể mở trên máy tính hoặc điện thoại để xem từng bước.
 
-## Cập nhật từ bản cũ lên 1.0.15
+## Cập nhật từ bản cũ lên 1.0.17
 
-**[Xem hướng dẫn cập nhật giữ dữ liệu và mã kích hoạt](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Cap-Nhat-1.0.15.txt).**
+**[Xem hướng dẫn cập nhật giữ dữ liệu và mã kích hoạt](https://github.com/longnguyenktqd/ldb-cham-cong-releases/releases/latest/download/LDB-Huong-Dan-Cap-Nhat-1.0.17.txt).**
 
-Tạo và tải thêm bản sao lưu, dùng đúng tài khoản Windows cũ, thoát LDB ở khay hệ thống rồi chạy bộ cài 1.0.15 bằng quyền quản trị Windows. Bộ cài chuyển dữ liệu sang dịch vụ bảo vệ riêng và giữ mã kích hoạt cùng thời hạn gói cũ. Mở biểu tượng Desktop để kiểm tra lại nhân viên, công và lương.
+Tạo và tải thêm bản sao lưu, dùng đúng tài khoản Windows cũ, thoát LDB ở khay hệ thống rồi chạy bộ cài 1.0.17 bằng quyền quản trị Windows. Bộ cài chuyển dữ liệu sang dịch vụ bảo vệ riêng và giữ mã kích hoạt cùng thời hạn gói cũ. Mở biểu tượng Desktop để kiểm tra lại nhân viên, công và lương.
 
 Khách dùng bản có kiểm tra cập nhật có thể bấm **Kiểm tra bản mới** trong phần mềm. Khi bật kiểm tra tự động, thông báo xuất hiện ở lần kiểm tra tiếp theo; quản lý vẫn cần tải và chạy bộ cài. Máy đã dùng 1.0.8 trở lên sẽ tự tạm dừng dịch vụ khi cài cập nhật sau này.
 
@@ -158,11 +166,11 @@ Tài liệu có hình minh họa và hướng dẫn:
 
 ---
 
-Tài liệu cập nhật ngày **26/11/2026**. Kho này cung cấp bộ cài, thông báo cập nhật và hướng dẫn công khai của LDB.
+Tài liệu cập nhật ngày **28/11/2026**. Kho này cung cấp bộ cài, thông báo cập nhật và hướng dẫn công khai của LDB.
 
 
 ### Bảo vệ chương trình trong 1.0.15
 
 Bản 1.0.15 tăng bảo vệ mã chương trình và kiểm tra bản quyền; giữ dữ liệu, mã kích hoạt, thời hạn và cách tính lương cũ. Khách cập nhật trên cùng máy/Windows, tải sao lưu trước khi cài. Nếu phát hiện thành phần chương trình bị thay đổi, cài lại bộ chính thức; không xóa dữ liệu hoặc mã kích hoạt. Không cam kết chống phân tích hoặc bẻ khóa tuyệt đối.
 
-Kho này chỉ phân phối bộ cài và tài liệu công khai, không chứa dự án mã nguồn riêng hoặc khóa cấp mã. Hai mục Source code do GitHub tự tạo; từ v1.0.15 bản nén này chỉ giữ hướng dẫn kho. Khách cài bằng tệp LDB-Cai-Dat-Cham-Cong-1.0.15.exe trong Assets.
+Kho này chỉ phân phối bộ cài và tài liệu công khai, không chứa dự án mã nguồn riêng hoặc khóa cấp mã. Hai mục Source code do GitHub tự tạo; từ v1.0.15 bản nén này chỉ giữ hướng dẫn kho. Khách cài bằng tệp LDB-Cai-Dat-Cham-Cong-1.0.17.exe trong Assets.
