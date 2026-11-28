@@ -8,4 +8,4 @@ CẬP NHẬT
 3. Mở lại LDB từ Desktop, kiểm tra phiên bản 1.0.17. Dùng tài khoản nhân viên thử, chấm vào ca và xem ảnh trong Bảng công.
 4. Thử khi không có camera: vẫn phải ghi công, có ghi chú không có ảnh.
 
-Đã qua 105 kiểm tra tự động và kiểm tra bộ cài/nâng cấp từ 1.0.16 trong vùng riêng. Không thay thuật toán mã máy, khóa bản quyền, định dạng dữ liệu hoặc cách tính lương. Bộ cài chưa được đăng GitHub và chưa cài vào phần mềm đang chạy. Cần anh thử lại với webcam thật trên máy gặp lỗi.
+Đã qua 105 kiểm tra tự động và kiểm tra bộ cài/nâng cấp từ 1.0.16 trong vùng riêng. Không thay thuật toán mã máy, khóa bản quyền, định dạng dữ liệu hoặc cách tính lương. Cần anh thử lại với webcam thật trên máy gặp lỗi.

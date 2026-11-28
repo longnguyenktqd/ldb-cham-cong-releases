@@ -2,11 +2,12 @@
   "version": "1.0.17",
   "reviewedPublicFiles": {
     "LDB-Cai-Dat-Cham-Cong-1.0.17.exe": "880022e0d02f9687b0215a8658411e12739eae9a2dab5f5791968162b47be6f7",
-    "LDB-Huong-Dan-Cap-Nhat-1.0.17.txt": "8f1414ff70ad26c04114c533442272acee18b61a17a4639e31889e7914c6d6cf",
+    "LDB-Huong-Dan-Cap-Nhat-1.0.17.txt": "53a70bacfb16e87a29b75e4033ee14d7aad0de83623d7b75f4523c6b78c79fb8",
     "LDB-Huong-Dan-Su-Dung.pdf": "2109a176f9b179d4f611d237a757fea70494c0c4d5c1c7467838081b89dcfb85",
     "ldb-update.json": "bc244304b434b0ba70c0953f82be6aa9fc3ccd5b72bbc899be74868960fa0ee6"
   },
   "containsPrivateSource": false,
   "containsPrivateKeys": false,
-  "customerDataIncluded": false
+  "customerDataIncluded": false,
+  "documentationFinalized": true
 }
